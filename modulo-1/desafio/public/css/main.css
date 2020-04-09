@@ -1,0 +1,271 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width:100%;
+	max-width:100%;
+	display:block;
+
+}
+
+body {
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+	color:#fff;
+}
+
+.container {
+	width:960px;
+	margin: 0 auto;
+	z-index:2;
+}
+
+main {
+	height: 1000px;
+}
+
+header.hero {
+	width: 100%;
+	height: 90vh;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding:20px;
+	background-image: url(../img/capa-madmax2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	
+}
+
+header.hero:after {
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+header.hero > .hero-nav {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+header.hero > .hero-nav > .nav-items {
+	list-style: none;
+	display: flex;
+	flex:1;
+	justify-content: space-evenly;
+	margin: 0;
+}
+
+header.hero > .hero-nav > .nav-items li a {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+header.hero > .hero-nav > .nav-items li a:hover{
+	color: #e4bb23;
+}	
+
+.hero-avatar {
+	display: flex;
+	align-items: center;
+	
+}
+
+.hero-avatar > img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.hero-avatar > p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-content > h1 {
+	font-size: 6.5em;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin: 0;
+	color:#fff;
+}
+
+.hero-content > .hero-genero {
+	display: flex;
+	list-style: none;
+	padding:0;
+	margin-bottom: 30px;
+}
+
+.hero-content > .hero-genero a {
+	font-size: 13px;
+	margin-right: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+.hero-content > .hero-genero a:hover {
+	color: #e4bb23;
+}
+
+.hero-button {
+	width:200px;
+	height: 50px;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	color:#000;
+}
+
+.hero-button > span {
+	display: inline-block;
+	padding-left:30px;
+}
+
+.hero-button > i {
+	font-size: 1.5em;
+}
+
+.hero-info {
+	font-size: 1.5em;
+}
+
+.hero-info > p:last-child {
+	color:#e4bb23;
+	margin-top: 15px;
+	padding-bottom:30px;
+}
+
+main.catalogo {
+	background-color: #f2f2f2;
+	padding-bottom:50px;
+	height: auto;
+}
+
+.catalogo .catalogo-nav {
+	border-bottom:  1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.catalogo-nav a {
+	display: inline-block;
+	padding: 30px 20px;
+	color:#e4bb23;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	border-bottom: 1px solid transparent;
+}
+
+.catalogo-nav a:hover {
+	border-bottom: 1px solid #e4bb23;
+}
+
+.catalogo-films {
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.catalogo-film {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.catalogo-film > figure {
+	width: 100%;
+	margin: 0;
+	
+}
+
+.catalogo-film-info{
+	padding: 15px 15px;
+	color: #000;
+}
+
+.catalogo-film-info > h3 {
+	font-size: 1.3em;
+  font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.catalogo-film-info > p {
+	color: #e4bb23;
+	font-size: 12px;
+}
+
+.catalogo-film-nota {
+	  align-items: center;
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+		justify-content: space-between;
+		margin-top: 10px;
+}
+
+.catalogo-film-nota i {
+	color: #ccc;
+	cursor:pointer;
+}
+.catalogo-film-nota i:hover {
+	color: red
+}
+
+footer {
+	padding: 35px 0;
+}
+
+footer > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+footer .socials a i {
+	font-size: 2.5em;
+  color: #bababa;
+  text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	margin-right: 35px;
+}
+footer .socials a i:hover {
+	color:#e4bb23;
+}
